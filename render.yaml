@@ -1,12 +1,16 @@
 databases:
   - name: judge0-db
     plan: free
+    allowIps:
+      - 0.0.0.0/0  # allows all IPs (for testing)
 
 services:
   # Redis Service
   - type: redis
     name: judge0-redis
     plan: free
+    allowIps:
+      - 0.0.0.0/0  # allows all IPs (for testing)
 
   # Judge0 API Service
   - type: web
