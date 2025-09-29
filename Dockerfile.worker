@@ -1,0 +1,6 @@
+FROM judge0/api:latest
+
+WORKDIR /app
+
+# Run worker
+CMD ["./scripts/workers"]
