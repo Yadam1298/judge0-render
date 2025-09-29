@@ -14,8 +14,6 @@ services:
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    allowIps:
-      - 0.0.0.0/0  # for testing, allows all IPs
     envVars:
       - key: DATABASE_URL
         fromDatabase:
