@@ -1,0 +1,10 @@
+FROM judge0/api:latest
+
+# Expose API port
+EXPOSE 3000
+
+# Set working directory
+WORKDIR /app
+
+# Run API
+CMD ["./scripts/api"]
